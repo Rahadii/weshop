@@ -1,2 +1,2 @@
-# aplikasi-manajemen-toko
-for Manajemen Proyek
+# Aplikasi Manajemen Toko
+Manajemen Projek
