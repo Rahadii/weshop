@@ -7,6 +7,7 @@ body{
 	margin: 0px;
 }
 
+/* Parent Id - Container */
 #container{
 	width: 1100px;
 	height: auto;
@@ -14,20 +15,24 @@ body{
 	padding: 10px;
 }
 
+/* Header */
 #container #header{
 	margin-top: 30px;
 }
 
+/* Menu */
 #container #header #menu{
 	background: #1e5474;
 	padding: 5px 10px;
 	overflow: hidden;
 }
 
+/* User */
 #container #header #menu #user{
 	float: left;
 }
 
+/* Edit a link in id menu */
 #container #header #menu #user a{
 	color: #fff;
 	padding-right: 5px;
