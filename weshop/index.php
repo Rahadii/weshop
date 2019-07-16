@@ -1,9 +1,6 @@
-<?php  
-// include helper 	
-include_once("function/helper.php");
-
-$page = isset($_GET['page']) ? $_GET['page'] : false;
-echo $page;	
+<?php
+	include_once("function/helper.php");
+	$page = isset($_GET['page']) ? $_GET['page'] : false;
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,11 +24,21 @@ echo $page;
 				<a href="<?php echo BASE_URL."index.php?page=keranjang"; ?>" id="button-keranjang">
 					<img src="<?php echo BASE_URL."images/cart.png"; ?>">
 				</a>
-
 			</div>
 		</div>
 
-		<div id="content"></div>
+		<div id="content">
+			<?php
+			// for checking file  
+				$filename = "$page.php";
+				// checking
+				if(file_exists($filename)){
+					include_once($filename); // include if file exist
+				}else{
+					echo "File Not Found | 404"; // Not Found Page
+				}
+			?>
+		</div>
 
 		<div id="footer">
 			<p>Copyright Weshop 2019</p>
