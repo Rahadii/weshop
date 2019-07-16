@@ -1,39 +1,34 @@
 /* CSS */
-body{
+body {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 12px;
+	font-size: 12.5px;
 	color: #1e5474;
 	background: #e7e7e7;
 	margin: 0px;
 }
 
-/* Parent Id - Container */
-#container{
+#container {
 	width: 1100px;
 	height: auto;
 	margin: 0px auto;
 	padding: 10px;
 }
 
-/* Header */
-#container #header{
+#container #header {
 	margin-top: 30px;
 }
 
-/* Menu */
-#container #header #menu{
+#container #header #menu {
 	background: #1e5474;
 	padding: 5px 10px;
 	overflow: hidden;
 }
 
-/* User */
-#container #header #menu #user{
+#container #header #menu #user {
 	float: left;
 }
 
-/* Edit a link in id menu */
-#container #header #menu #user a{
+#container #header #menu #user a {
 	color: #fff;
 	padding-right: 5px;
 	margin-top: 5px;
@@ -41,32 +36,30 @@ body{
 	text-decoration: none;
 }
 
-/* button-keranjang */
-#container #header #menu #button-keranjang{
+#container #header #menu #button-keranjang {
 	float: right;
 	background: orange;
 	padding: 2px 10px;
 	border-radius: 3px;
 }
 
-/* button-keranjang > img */
-#container #header #menu #button-keranjang img{
+#container #header #menu #button-keranjang img {
 	vertical-align: bottom;
 }
 
 /* Content */
-#container #content{
+#container #content {
 	padding: 10px 0px;
 	overflow: hidden;
 }
 
 /* Footer */
-#container #footer{
+#container #footer {
 	background: #1e5474;
 	padding: 10px;
 }
 
-#container #footer p{
+#container #footer p {
 	color: #fff;
 	text-align: right;
 	font-size: 12px;
@@ -74,3 +67,55 @@ body{
 }
 
 /* End Footer */
+
+/* Form */
+#container-user-akses {
+	width: 350px;
+	height: auto;
+	margin : 50px auto;
+}
+
+.element-form {
+	margin-bottom: 15px;
+}
+
+.element-form label {
+	display: block;
+	font-weight: bold;
+}
+
+.element-form span {
+	display: block;
+}
+
+.element-form span input[type="text"],
+.element-form span input[type="password"],
+.element-form span textarea,
+.element-form span select {
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.element-form span input[type="submit"] {
+	background: #1e5474;
+	border: none;
+	color: #fff;
+	padding: 7px 20px;
+	border-radius: 3px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.element-form span input[type="submit"]:hover {
+	background: orange;
+}
+
+.notif {
+	background: red;
+	padding: 10px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+}
