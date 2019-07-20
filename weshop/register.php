@@ -1,3 +1,8 @@
+<?php 
+	if ($user_id) {
+		header("location:".BASE_URL);
+	}
+?>
 <div id="container-user-akses">
 	
 	<form action="<?php echo BASE_URL."proses-register.php" ?>" method="POST">
@@ -10,14 +15,9 @@
 			$alamat = isset($_GET['alamat']) ? $_GET['alamat'] : false;
 
 			// $dataform = http_build_query(query_data);
+			
+			include_once('function/validasi.php');
 
-			if ($notif == "require") {
-				echo "<div class='notif'>Maaf, Kamu harus melengkapi Form dibawah !</div>";
-			} else if($notif == "password") {
-				echo "<div class='notif'>Maaf, Password yang kamu masukkan tidak sama !</div>";
-			}else if($notif == "email") {
-				echo "<div class='notif'>Maaf, E-mail yang kamu masukkan sudah terdaftar !</div>";
-			}
 		?>
 
 		<div class="element-form">
@@ -32,7 +32,7 @@
 
 		<div class="element-form">
 			<label>Nomer Telepon / Handphone</label>
-			<span><input type="text" name="phone" value="<?php echo $phone; ?>" autocomplete="off" /></span>
+			<span><input type="text" name="phone" value="<?php echo $phone; ?>" autocomplete="off" onkeypress="return restrictAlphabets(event)" /></span>
 		</div>
 
 		<div class="element-form">
@@ -56,4 +56,5 @@
 
 	</form>
 
+	<script src="js/handlerkey.js"></script>
 </div>
