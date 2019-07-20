@@ -26,6 +26,7 @@ body {
 
 #container #header #menu #user {
 	float: left;
+	color : #fff;
 }
 
 #container #header #menu #user a {
@@ -118,4 +119,35 @@ body {
 	font-weight: bold;
 	color: #fff;
 	text-align: center;
+}
+
+#menu-profile {
+    float: left;
+    width: 245px;
+    background: #135474;
+}
+
+#menu-profile ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#menu-profile ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+#menu-profile ul li a:hover, 
+a.active {
+    background: orange;
+}
+
+#profile-content {
+	float: left;
+	width: 835px;
+	padding: 10px;
+	background: #fff;
 }
