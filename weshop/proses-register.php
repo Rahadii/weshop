@@ -20,6 +20,12 @@
 	
 	if (empty($nama_lengkap) || empty($email) || empty($phone) || empty($alamat) || empty($password)) {
 		header("location: ".BASE_URL."index.php?page=register&notif=require&$dataform");
+	} else if (!preg_match("/^[a-zA-Z ]*$/", $nama_lengkap)) {
+		header("location: ".BASE_URL."index.php?page=register&notif=validasiNama&$dataform");
+	} else if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		header("location: ".BASE_URL."index.php?page=register&notif=validasiEmail&$dataform");
+	} else if (!preg_match("/^[0-9]*$/", $phone)) {
+		header("location: ".BASE_URL."index.php?page=register&notif=validasiPhone&$dataform");
 	} else if ($password != $re_password) {
 		header("location: ".BASE_URL."index.php?page=register&notif=password&$dataform");
 	} else if (mysqli_num_rows($query) == 1) {
