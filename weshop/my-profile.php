@@ -13,7 +13,7 @@
     <div id="menu-profile">
         <ul>
             <li>
-                <a <?php if($module == "kategori"){ echo "class='active'";} ?> href=<?php echo BASE_URL."index.php?page=my-profile&module=kategori&action=list"; ?>">Kategori</a>
+                <a <?php if($module == "kategori"){ echo "class='active'";} ?> href="<?php echo BASE_URL."index.php?page=my-profile&module=kategori&action=list"; ?>">Kategori</a>
             </li>
             <li>
                 <a <?php if($module == "barang"){ echo "class='active'";} ?> href="<?php echo BASE_URL."index.php?page=my-profile&module=barang&action=list"; ?>">Barang</a>
@@ -36,10 +36,10 @@
     <div id="profile-content">
         <?php 
             $file = "module/$module/$action.php";
-            if (file_exists($file)) {
+            if(file_exists($file)) {
                 include_once($file);
             } else {
-                echo "<h3>Sorry, Page Not Found</h3>";
+                echo "<h3>Maaf, Halaman tidak ditemukan</h3>";
             }
         ?>
     </div>
