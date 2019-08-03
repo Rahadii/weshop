@@ -1,5 +1,5 @@
 <?php 
-	if ($user_id) {
+	if($user_id){
 		header("location:".BASE_URL);
 	}
 ?>
@@ -17,7 +17,6 @@
 			// $dataform = http_build_query(query_data);
 			
 			include_once('function/validasi.php');
-
 		?>
 
 		<div class="element-form">

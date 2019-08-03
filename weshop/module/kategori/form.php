@@ -12,8 +12,7 @@
      </span>
 </div>
 <div class="element-form">
-	<label>Kategori</label>
-	<span><input type="text" name="kategori" placeholder="Nama Kategori" autocomplete="off" /></span>
+	<span><input type="submit" value="Add" /></span>
 </div>
 
 </form>
