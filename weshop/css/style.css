@@ -151,3 +151,50 @@ a.active {
 	padding: 10px;
 	background: #fff;
 }
+
+.table-list {
+	width: 100%;
+	border-collapse: collapse;	
+}
+
+.table-list tr.baris-title {
+	background: #e6e6e6;
+}
+
+.table-list tr.baris-title th, 
+.table-list tr td {
+	padding: 10px 7px;
+}
+
+.numberColumn {
+	width: 20px;
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+#frame-tambah {
+	margin-top: 8px;
+	margin-bottom: 15px;
+	text-align: right;
+}
+
+.tombol-action {
+	background: #1e5474;
+	color: #fff;
+	padding: 7px 15px;
+	border-radius: 3px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 3px;
+}
+
+.tombol-action:hover {
+	background: orange;
+}

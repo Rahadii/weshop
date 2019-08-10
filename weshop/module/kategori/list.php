@@ -11,20 +11,20 @@
         
         echo "<table class='table-list'>";
         
-        echo "<tr>
-                <th>No</th>
-                <th>Kategori</th>
-                <th>Status</th>
-                <th>Action</th>
+        echo "<tr class='baris-title'>
+                <th class='numberColumn'>No</th>
+                <th class='left'>Kategori</th>
+                <th class='center'>Status</th>
+                <th class='center'>Action</th>
               </tr>";
         
         $no = 1; // untuk penomoran
         while ($row = mysqli_fetch_assoc($queryKategory)) {
             echo "<tr>
-                    <td>$no</td>
-                    <td>$row[kategori]</td>
-                    <td>$row[status]</td>
-                    <td><a href='".BASE_URL."index.php?page=my-profile&module=kategori&action=form&kategori_id=$row[kategori_id]'>Edit</a>
+                    <td class='numberColumn'>$no</td>
+                    <td class='left'>$row[kategori]</td>
+                    <td class='center'>$row[status]</td>
+                    <td class='center'><a href='".BASE_URL."index.php?page=my-profile&module=kategori&action=form&kategori_id=$row[kategori_id]' class='tombol-action'>Edit</a>
                     </td>
                   </tr>";
         $no++;
