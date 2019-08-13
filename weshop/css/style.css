@@ -198,3 +198,8 @@ a.active {
 .tombol-action:hover {
 	background: orange;
 }
+
+img .file_image {
+	width: 200px;
+	vertical-align: middle;
+}

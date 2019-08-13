@@ -15,6 +15,7 @@
 <head>
 	<title>Weshop - Jual Barang-barang Elektronik</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL."css/style.css"; ?>">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div id="container">
