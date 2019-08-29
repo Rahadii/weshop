@@ -11,7 +11,7 @@
         $row = mysqli_fetch_assoc($queryKategory);
 
         $kategori = $row['kategori'];
-        $status   = $row['status'  ];
+        $status   = $row['status'];
         $button   = "Update";
     }
 
@@ -22,7 +22,7 @@
     <div class="element-form">
 		<label>Kategori</label>
 		    <span>
-                <input type="text" name="kategori" value="<?php echo $kategori ?>" placeholder="Nama Kategori" />
+                <input type="text" name="kategori" value="<?php echo $kategori ?>" placeholder="Nama Kategori" required />
             </span>
     </div>
     
