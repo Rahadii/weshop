@@ -31,10 +31,6 @@
 		<div class="element-form">
 			<span>
 				<input type="submit" value="Login" /> 
-				<!-- Button trigger modal -->
-				<a href="<?php echo BASE_URL."index.php?page=forgot-password"; ?>">
-				Forgot Password ?
-				</a>
 			</span>
 		</div>
 
