@@ -3,7 +3,7 @@ body {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 12.5px;
 	color: #1e5474;
-	background: #e7e7e7;
+	background: #c7c7c7;
 	margin: 0px;
 }
 
@@ -202,4 +202,103 @@ a.active {
 img .file_image {
 	width: 200px;
 	vertical-align: middle;
+}
+
+#kiri {
+	width: 245px;
+	height: auto;
+	float: left;
+}
+
+#menu-kategori ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#menu-kategori ul li {
+	margin-bottom: 5px;
+}
+
+#menu-kategori ul li a {
+	display: block;
+	padding: 10px;
+	background: #fff;
+	color: #1e4574;
+	text-decoration: none;
+}
+
+#menu-kategori ul li a:hover {
+	background: #887a7a;
+	color: #fff;
+}
+
+#kanan {
+	width: 840px;
+	height: auto;
+	margin-left: 15px;
+	float: left;
+}
+
+#kanan #frame-barang ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#kanan #frame-barang ul li {
+	width: 240px;
+	background: #fff;
+	padding: 10px 15px;
+	margin-bottom: 15px;
+	margin-right: 15px;
+	float: left;
+}
+
+#kanan #frame-barang ul li .price {
+	font-size: 15px;
+	font-weight: bold;
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+#kanan #frame-barang ul li a img {
+	display: block;
+	width: 240px;
+}
+
+#kanan #frame-barang ul li .keterangan-gambar {
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+	padding: 10px 0px;
+	height: 50px;
+}
+
+#kanan #frame-barang ul li .keterangan-gambar p {
+	text-align: center;
+	margin: 5px 0px;
+}
+
+#kanan #frame-barang ul li .keterangan-gambar span {
+	display: block;
+	text-align: center;
+}
+
+#kanan #frame-barang ul li .button-add-cart {
+	text-align: center;
+} 
+
+#kanan #frame-barang ul li .button-add-cart a {
+	background: #1e5474;
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 10px;
+	display: inline-block;
+	margin-top: 10px;
+	border-radius: 4px;
+}
+
+#kanan #frame-barang ul li .button-add-cart a:hover {
+	background: orange;
 }
