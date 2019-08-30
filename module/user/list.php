@@ -12,25 +12,25 @@
         echo "<table class='table-list'>";
           
             echo "<tr class='baris-title'>
-                    <th class='kolom-nomor'>No</th>
-                    <th class='kiri'>Nama</th>
-                    <th class='kiri'>Email</th>
-                    <th class='kiri'>Phone</th>
-                    <th class='kiri'>Level</th>
-                    <th class='tengah'>Status</th>
-                    <th class='tengah'h>Action</th>
+                    <th class='numberColumn'>No</th>
+                    <th class='left'>Nama</th>
+                    <th class='left'>Email</th>
+                    <th class='left'>Phone</th>
+                    <th class='left'>Level</th>
+                    <th class='center'>Status</th>
+                    <th class='center'h>Action</th>
                  </tr>";
   
             while($rowUser=mysqli_fetch_array($queryAdmin))
             {
                 echo "<tr>
-                        <td class='kolom-nomor'>$no</td>
+                        <td class='numberColumn'>$no</td>
                         <td>$rowUser[nama]</td>
                         <td>$rowUser[email]</td>
                         <td>$rowUser[phone]</td>
                         <td>$rowUser[level]</td>
-                        <td class='tengah'>$rowUser[status]</td>
-                        <td class='tengah'><a class='tombol-action' href='".BASE_URL."index.php?page=my-profile&module=user&action=form&user_id=$rowUser[user_id]"."'>Edit</a></td>
+                        <td class='center'>$rowUser[status]</td>
+                        <td class='center'><a class='tombol-action' href='".BASE_URL."index.php?page=my-profile&module=user&action=form&user_id=$rowUser[user_id]"."'>Edit</a></td>
                      </tr>";
               
                 $no++;

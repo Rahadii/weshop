@@ -228,9 +228,9 @@ img .file_image {
 	text-decoration: none;
 }
 
-#menu-kategori ul li a:hover {
-	background: #887a7a;
-	color: #fff;
+#menu-kategori ul li a:hover,
+#menu-kategori ul li a.active {
+	background: #e8e8e8;
 }
 
 #kanan {

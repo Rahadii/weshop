@@ -5,7 +5,11 @@
                     $query = mysqli_query($db, "SELECT * FROM kategori WHERE status = 'on' ORDER BY kategori ASC");
 
                     while($row = mysqli_fetch_assoc($query)){
-                         echo "<li><a href='".BASE_URL."index.php?kategori_id=$row[kategori_id]'>$row[kategori]</a></li>";
+                         if($kategori_id == $row['kategori_id']){
+                              echo "<li><a href='".BASE_URL."index.php?kategori_id=$row[kategori_id]' class='active'>$row[kategori]</a></li>";
+                         } else {
+                              echo "<li><a href='".BASE_URL."index.php?kategori_id=$row[kategori_id]'>$row[kategori]</a></li>";
+                         }
                     }    
                ?>
           </ul>
@@ -15,8 +19,12 @@
 <div id="kanan">
      <div id="frame-barang">
           <ul>
-               <?php 
-                    $query = mysqli_query($db, "SELECT * FROM barang WHERE status = 'on' ORDER BY barang_id DESC LIMIT 9");
+               <?php
+                    if($kategori_id){
+                         $query = mysqli_query($db, "SELECT * FROM barang WHERE status='on' AND kategori_id='$kategori_id' ORDER BY rand() DESC LIMIT 9");
+                    } else {
+                         $query = mysqli_query($db, "SELECT * FROM barang WHERE status='on' ORDER BY rand() DESC LIMIT 9");
+                    }
 
                     $no = 1;
                     while($row = mysqli_fetch_assoc($query)){

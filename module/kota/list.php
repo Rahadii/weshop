@@ -13,21 +13,21 @@
 		echo "<table class='table-list'>";
 		
 			echo "<tr class='baris-title'>
-					<th class='kolom-nomor'>No</th>
-					<th class='kiri'>Kota</th>
-					<th class='kiri'>Tarif</th>
-					<th class='tengah'>Status</th>
-					<th class='tengah'>Action</th>
+					<th class='numberColumn'>No</th>
+					<th class='left'>Kota</th>
+					<th class='left'>Tarif</th>
+					<th class='center'>Status</th>
+					<th class='center'>Action</th>
 				 </tr>";
 				 
 			$no = 1;
 			while($rowKota=mysqli_fetch_assoc($queryKota)){
 				echo "<tr>
-						<td class='kolom-nomor'>$no</td>
+						<td class='numberColumn'>$no</td>
 						<td>$rowKota[kota]</td>
 						<td>".rupiah($rowKota['tarif'])."</td>
-						<td class='tengah'>$rowKota[status]</td>
-						<td class='tengah'>
+						<td class='center'>$rowKota[status]</td>
+						<td class='center'>
 							<a class='tombol-action' href='".BASE_URL."index.php?page=my-profile&module=kota&action=form&kota_id=$rowKota[kota_id]"."'>Edit</a>
 						</td>
 					 </tr>";

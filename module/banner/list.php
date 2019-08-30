@@ -16,21 +16,21 @@
         echo "<table class='table-list'>";
             
             echo "<tr class='baris-title'>
-                    <th class='kolom-nomor'>No</th>
-                    <th class='kiri'>Banner</th>
-                    <th class='kiri'>Link</th>
-                    <th class='tengah'>Status</th>
-                    <th class='tengah'>Action</th>
+                    <th class='numberColumn'>No</th>
+                    <th class='left'>Banner</th>
+                    <th class='left'>Link</th>
+                    <th class='center'>Status</th>
+                    <th class='center'>Action</th>
                  </tr>";
     
             while($rowBanner=mysqli_fetch_array($queryBanner))
             {
                 echo "<tr>
-                        <td class='kolom-nomor'>$no</td>
+                        <td class='numberColumn'>$no</td>
                         <td>$rowBanner[banner]</td>
                         <td><a target='blank' href='".BASE_URL."$rowBanner[link]'>$rowBanner[link]</a></td>
-                        <td class='tengah'>$rowBanner[status]</td>
-                        <td class='tengah'><a class='tombol-action' href='".BASE_URL."index.php?page=my-profile&module=banner&action=form&banner_id=$rowBanner[banner_id]"."'>Edit</a></td>
+                        <td class='center'>$rowBanner[status]</td>
+                        <td class='center'><a class='tombol-action' href='".BASE_URL."index.php?page=my-profile&module=banner&action=form&banner_id=$rowBanner[banner_id]"."'>Edit</a></td>
                      </tr>";
                 
                 $no++;
