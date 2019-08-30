@@ -16,6 +16,25 @@
 <head>
 	<title>Weshop - Jual Barang-barang Elektronik</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL."css/style.css"; ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL."css/banner.css"; ?>">
+	
+	<!-- jQuery -->
+	<script src="<?php echo BASE_URL."js/jquery-3.4.1.min.js"; ?>"></script>
+	<script src="<?php echo BASE_URL."js/Slides-SlidesJS-3/source/jquery.slides.min.js"; ?>"></script>
+	<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  	<script>
+    		$(function() {
+      		$('#slides').slidesjs({
+				height: 350,
+				play: {
+					auto: true,
+					interval: 5000
+				},
+        			navigation: true
+      		});
+		});
+  	</script>
+  	<!-- End SlidesJS Required -->
 </head>
 <body>
 	<div id="container">

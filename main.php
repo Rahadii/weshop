@@ -17,6 +17,16 @@
 </div>
 
 <div id="kanan">
+     <div id="slides">
+          <?php 
+               $queryBanner = mysqli_query($db, "SELECT * FROM banner WHERE status='on' ORDER BY banner_id DESC LIMIT 3");
+
+               while ($rowBanner = mysqli_fetch_assoc($queryBanner)) {
+                    echo "<a href='".BASE_URL."$rowBanner[link]'><img src='".BASE_URL."images/slide/$rowBanner[gambar]' /></a>";
+               }
+          ?>
+     </div>
+
      <div id="frame-barang">
           <ul>
                <?php
