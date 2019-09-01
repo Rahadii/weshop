@@ -1,5 +1,5 @@
 <div id="frame-tambah">
-	<a class="tombol-action" href="<?php echo BASE_URL."index.php?page=my-profile&module=banner&action=form"; ?>">+ Tambah Banner</a>
+	<a class="tombol-action" href="<?php echo BASE_URL."index.php?page=my-profile&module=banner&action=form"; ?>"><i class="fa fa-plus"></i> Tambah Banner</a>
 </div>
 
 <?php
