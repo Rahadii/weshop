@@ -1,19 +1,7 @@
 <div id="kiri">
-     <div id="menu-kategori">
-          <ul>
-               <?php 
-                    $query = mysqli_query($db, "SELECT * FROM kategori WHERE status = 'on' ORDER BY kategori ASC");
-
-                    while($row = mysqli_fetch_assoc($query)){
-                         if($kategori_id == $row['kategori_id']){
-                              echo "<li><a href='".BASE_URL."index.php?kategori_id=$row[kategori_id]' class='active'>$row[kategori]</a></li>";
-                         } else {
-                              echo "<li><a href='".BASE_URL."index.php?kategori_id=$row[kategori_id]'>$row[kategori]</a></li>";
-                         }
-                    }    
-               ?>
-          </ul>
-     </div>
+     <?php 
+          echo kategori($kategori_id);
+     ?>
 </div>
 
 <div id="kanan">
@@ -54,7 +42,7 @@
                                         <span>Stok : $row[stok]</span>
                                    </div>
                                    <div class='button-add-cart'>
-                                        <a href='".BASE_URL."tambah-keranjang.php?barang_id=$row[barang_id]'>+ Add to Cart</a>
+                                        <a href='".BASE_URL."tambah-keranjang.php?barang_id=$row[barang_id]'><i class='fa fa-plus'></i> Add to Cart</a>
                                    </div>";
 
                               $no++;

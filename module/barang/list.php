@@ -28,7 +28,7 @@
                     <td class='left'>$row[kategori]</td>
                     <td class='left'>". rupiah($row['harga'])."</td>
                     <td class='center'>$row[status]</td>
-                    <td class='center'><a href='".BASE_URL."index.php?page=my-profile&module=barang&action=form&barang_id=$row[barang_id]' class='tombol-action'>Edit</a>
+                    <td class='center'><a href='".BASE_URL."index.php?page=my-profile&module=barang&action=form&barang_id=$row[barang_id]' class='tombol-action'><i class='fa fa-edit'></i> Edit</a>
                     </td>
                   </tr>";
         $no++;

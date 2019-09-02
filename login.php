@@ -19,8 +19,8 @@
 		?>
 
 		<div class="element-form">
-			<label>E-Mail</label>
-			<span><input type="text" name="email" placeholder="E-mail" autocomplete="off" /></span>
+			<label>Email</label>
+			<span><input type="text" name="email" placeholder="Email" autocomplete="off" /></span>
 		</div>
 
 		<div class="element-form">

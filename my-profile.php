@@ -16,19 +16,19 @@
                 if ($level == "superadmin") {
             ?>
             <li>
-                <a <?php if($module == "kategori"){ echo "class='active'";} ?> href="<?php echo BASE_URL."index.php?page=my-profile&module=kategori&action=list"; ?>">Kategori</a>
+                <a <?php if($module == "kategori"){ echo "class='active'";} ?> href="<?php echo BASE_URL."index.php?page=my-profile&module=kategori&action=list"; ?>"><i class="fas fa-clipboard-list fa-lg"></i> Kategori</a>
             </li>
             <li>
-                <a <?php if($module == "barang"){ echo "class='active'";} ?> href="<?php echo BASE_URL."index.php?page=my-profile&module=barang&action=list"; ?>">Barang</a>
+                <a <?php if($module == "barang"){ echo "class='active'";} ?> href="<?php echo BASE_URL."index.php?page=my-profile&module=barang&action=list"; ?>"><i class="fas fa-box-open fa-lg"></i> Barang</a>
             </li>
             <li>
-                <a <?php if($module == "kota"){ echo "class='active'";} ?> href="<?php echo BASE_URL."index.php?page=my-profile&module=kota&action=list"; ?>">Kota</a>
+                <a <?php if($module == "kota"){ echo "class='active'";} ?> href="<?php echo BASE_URL."index.php?page=my-profile&module=kota&action=list"; ?>"><i class="fas fa-city fa-lg"></i> Kota</a>
             </li>
             <li>
-                <a <?php if($module == "user"){ echo "class='active'";} ?> href="<?php echo BASE_URL."index.php?page=my-profile&module=user&action=list"; ?>">User</a>
+                <a <?php if($module == "user"){ echo "class='active'";} ?> href="<?php echo BASE_URL."index.php?page=my-profile&module=user&action=list"; ?>"><i class="fas fa-users fa-lg"></i> Users</a>
             </li>
             <li>
-                <a <?php if($module == "banner"){ echo "class='active'";} ?> href="<?php echo BASE_URL."index.php?page=my-profile&module=banner&action=list"; ?>">Banner</a>
+                <a <?php if($module == "banner"){ echo "class='active'";} ?> href="<?php echo BASE_URL."index.php?page=my-profile&module=banner&action=list"; ?>"><i class="fas fa-bold fa-lg"></i> Banner</a>
             </li>
                 <?php } ?>
             <li>

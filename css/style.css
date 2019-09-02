@@ -190,6 +190,14 @@ body {
 	text-align: right;
 }
 
+p.header-left {
+	float: left;
+	margin-top: -5px;
+	margin-bottom: 3px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
 .tombol-action {
 	background: #1e5474;
 	color: #fff;
@@ -307,4 +315,52 @@ img .file_image {
 
 #kanan #frame-barang ul li .button-add-cart a:hover {
 	background: orange;
+}
+
+/* Detail Barang styling */
+#detail-barang {
+	background: #fff;
+	padding: 15px;
+}
+
+#detail-barang h2 {
+	margin-top: 0;
+}
+
+#detail-barang #frame-gambar {
+	background: #f8f8f8;
+	padding: 20px;
+}
+
+#detail-barang #frame-gambar img {
+	display: block;
+	margin: 0 auto;
+}
+
+#detail-barang #frame-harga {
+	margin: 15px 0;
+}
+
+#detail-barang #frame-harga span {
+	font-size: 15px;
+	font-weight: bold;
+	color: #8f2020;
+}
+
+#detail-barang #frame-harga a {
+	background: #1e4574;
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 10px;
+	/* display: inline-block; */
+	float: right;
+	border-radius: 3px;
+}
+
+#detail-barang #frame-harga a:hover{
+	background: orange;
+}
+
+#detail-barang #keterangan {
+	margin: 20px 0px;
 }

@@ -28,7 +28,7 @@
 						<td>".rupiah($rowKota['tarif'])."</td>
 						<td class='center'>$rowKota[status]</td>
 						<td class='center'>
-							<a class='tombol-action' href='".BASE_URL."index.php?page=my-profile&module=kota&action=form&kota_id=$rowKota[kota_id]"."'>Edit</a>
+							<a class='tombol-action' href='".BASE_URL."index.php?page=my-profile&module=kota&action=form&kota_id=$rowKota[kota_id]"."'><i class='fa fa-edit'></i> Edit</a>
 						</td>
 					 </tr>";
 				

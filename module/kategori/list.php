@@ -1,4 +1,5 @@
 <div id="frame-tambah">
+    <!-- <p class="header-left">Kategori</p> -->
     <a href="<?php echo BASE_URL."index.php?page=my-profile&module=kategori&action=form"; ?>" class="tombol-action"><i class="fa fa-plus"></i> Tambah Kategori</a>
 </div>
 
@@ -24,7 +25,7 @@
                     <td class='numberColumn'>$no</td>
                     <td class='left'>$row[kategori]</td>
                     <td class='center'>$row[status]</td>
-                    <td class='center'><a href='".BASE_URL."index.php?page=my-profile&module=kategori&action=form&kategori_id=$row[kategori_id]' class='tombol-action'>Edit</a>
+                    <td class='center'><a href='".BASE_URL."index.php?page=my-profile&module=kategori&action=form&kategori_id=$row[kategori_id]' class='tombol-action'><i class='fa fa-edit'></i> Edit</a>
                     </td>
                   </tr>";
         $no++;

@@ -17,8 +17,10 @@
 	<title>Weshop - Jual Barang-barang Elektronik</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL."css/style.css"; ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo BASE_URL."css/banner.css"; ?>">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<!-- jQuery -->
+	<script src="https://kit.fontawesome.com/7700bc3a8a.js"></script>
 	<script src="<?php echo BASE_URL."js/jquery-3.4.1.min.js"; ?>"></script>
 	<script src="<?php echo BASE_URL."js/Slides-SlidesJS-3/source/jquery.slides.min.js"; ?>"></script>
 	<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
@@ -78,7 +80,7 @@
 		</div>
 
 		<div id="footer">
-			<p>Copyright Weshop 2019</p>
+			<p><i class="fas fa-copyright fa-lg"></i> Copyright Weshop 2019</p>
 		</div>
 	</div>
 </body>

@@ -30,7 +30,7 @@
                         <td>$rowBanner[banner]</td>
                         <td><a target='blank' href='".BASE_URL."$rowBanner[link]'>$rowBanner[link]</a></td>
                         <td class='center'>$rowBanner[status]</td>
-                        <td class='center'><a class='tombol-action' href='".BASE_URL."index.php?page=my-profile&module=banner&action=form&banner_id=$rowBanner[banner_id]"."'>Edit</a></td>
+                        <td class='center'><a class='tombol-action' href='".BASE_URL."index.php?page=my-profile&module=banner&action=form&banner_id=$rowBanner[banner_id]"."'><i class='fa fa-edit'></i> Edit</a></td>
                      </tr>";
                 
                 $no++;
