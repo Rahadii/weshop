@@ -18,7 +18,7 @@
                     </div>
                     <div id='frame-harga'>
                          <span>".rupiah($row['harga'])."</span>
-                         <a href='".BASE_URL."tambah-keranjang?barang_id=$row[barang_id]'><i class='fa fa-plus'></i> Add to Cart</a>
+                         <a href='".BASE_URL."tambah_keranjang.php?barang_id=$row[barang_id]'><i class='fa fa-plus'></i> Add to Cart</a>
                     </div>
                     <div id='keterangan'>
                          <b>Keterangan : </b> $row[spesifikasi]
