@@ -11,18 +11,21 @@
 		global $db;
 
 		$string = "<div id='menu-kategori'>";
-          $string .= "<ul>";
+        $string .= "<ul>";
                
-               $query = mysqli_query($db, "SELECT * FROM kategori WHERE status = 'on' ORDER BY kategori ASC");
+        $query = mysqli_query($db, "SELECT * FROM kategori 
+									WHERE status = 'on' 
+									ORDER BY kategori ASC");
 
-               while($row = mysqli_fetch_assoc($query)){
-               	if($kategori_id == $row['kategori_id']){
-                    	$string .= "<li><a href='".BASE_URL."index.php?kategori_id=$row[kategori_id]' class='active'>$row[kategori]</a></li>";
-                    } else {
-                         $string .= "<li><a href='".BASE_URL."index.php?kategori_id=$row[kategori_id]'>$row[kategori]</a></li>";
-                    }
-               }    
-          $string .= "</ul>";
+        while($row = mysqli_fetch_assoc($query)){
+        
+		if($kategori_id == $row['kategori_id']){
+        	$string .= "<li><a href='".BASE_URL."index.php?kategori_id=$row[kategori_id]' class='active'>$row[kategori]</a></li>";
+        } else {
+            $string .= "<li><a href='".BASE_URL."index.php?kategori_id=$row[kategori_id]'>$row[kategori]</a></li>";
+        }
+     }    
+        $string .= "</ul>";
 		$string .= "</div>";
 		
 		return $string;
