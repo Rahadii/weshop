@@ -9,7 +9,8 @@
           $barang_id = $_GET['barang_id'];
 
           $query = mysqli_query($db, "SELECT * FROM barang WHERE barang_id='$barang_id' AND status='on' ");
-          $row = mysqli_fetch_assoc($query);
+          
+          $row = mysqli_fetch_assoc($query); 
 
           echo "<div id='detail-barang'>
                     <h2>$row[nama_barang]</h2>
