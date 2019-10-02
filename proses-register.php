@@ -2,8 +2,9 @@
 	include_once('function/helper.php');
 	include_once('function/koneksi.php');
 
-	$level 		= "customer";
-	$status 	= "on";
+	$level 		= "customer"; // default as customer
+	$status 	= "on"; // and default status on
+	
 	$nama_lengkap = $_POST['nama_lengkap'];
 	$email = $_POST['email']; 
 	$phone = $_POST['phone'];
@@ -31,7 +32,7 @@
 	} else if (mysqli_num_rows($query) == 1) {
 		header("location: ".BASE_URL."index.php?page=register&notif=email&$dataform");
 	} else {
-		$password = md5($password);
+		$password = md5($password); // hashing password
 		mysqli_query($db, "INSERT INTO user (level, nama, email, alamat, phone, password, status)
 					VALUES ('$level','$nama_lengkap','$email','$alamat','$phone','$password','$status')");
 		header("location: ".BASE_URL."index.php?page=login");

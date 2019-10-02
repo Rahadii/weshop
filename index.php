@@ -10,6 +10,14 @@
 	$user_id 	= isset($_SESSION['user_id']) ? $_SESSION['user_id'] : false;
 	$nama 	= isset($_SESSION['nama']) ? $_SESSION['nama'] : false;
 	$level 	= isset($_SESSION['level']) ? $_SESSION['level'] : false;
+	$keranjang = isset($_SESSION['keranjang']) ? $_SESSION['keranjang'] : array();
+
+	$totalBarang = count($keranjang);
+
+	// echo "<pre>";
+	// print_r($keranjang);
+	// echo "</pre>";
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -62,6 +70,11 @@
 				
 				<a href="<?php echo BASE_URL."index.php?page=keranjang"; ?>" id="button-keranjang">
 					<img src="<?php echo BASE_URL."images/cart.png"; ?>">
+					<?php 
+						if($totalBarang != 0){
+							echo "<span class='total-barang'>$totalBarang</span>";
+						}
+					?>
 				</a>
 
 			</div>
