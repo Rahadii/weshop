@@ -56,3 +56,58 @@
         </tr>
     </table>
 </div>
+    <table class="table-list">
+        <tr class="baris-title">
+            <th class="left">No</th>
+            <th class="left">Nama Barang</th>
+            <th>Qty</th>
+            <th class="right">Harga Satuan</th>
+            <th class="right">Total</th>
+        </tr>
+
+        <?php 
+            // query detail
+            $queryDetail = mysqli_query($db, "SELECT pesanan_detail.*, barang.nama_barang FROM pesanan_detail JOIN barang ON pesanan_detail.barang_id = barang.barang_id WHERE pesanan_detail.pesanan_id = '$pesanan_id'");
+            
+            $no = 1; // untuk penomoran sesuai dengan data yang ada
+            $subTotal = 0;
+
+            while($rowDetail = mysqli_fetch_assoc($queryDetail)){
+                
+                // pentotalan = harga * quantity
+                $total = $rowDetail['harga'] * $rowDetail['quantity'];
+                $subTotal += $total;
+                
+                echo "<tr>
+                        <td class='left'>$no</td>
+                        <td class='left'>$rowDetail[nama_barang]</td>
+                        <td class='center'>$rowDetail[quantity]</td>
+                        <td class='right'>".rupiah($rowDetail['harga'])."</td>
+                        <td class='right'>".rupiah($total)."</td>
+                     </tr>";
+                
+                $no++;
+            }
+
+            // menampilkan subTotal
+            $subTotal += $tarif;
+        ?>
+
+            <tr>
+                <td class="right" colspan="4"><b>Biaya Pengiriman</b></td>
+                <td class="right"><?= rupiah($row['tarif']); ?></td>
+            </tr>
+            <tr>
+                <td class="right" colspan="4"><b>Sub Total</b></td>
+                <td class="right"><?= rupiah($subTotal); ?></td>
+            </tr>
+    </table>
+
+    <div id="frame-keterangan-pembayaran">
+        <p>
+            Silahkan Lakukan pembayaran ke Bank BNI <br />
+            Nomor Rekening : 0605959153 a/n Weshop <br />
+            setelah melakukan pembayaran silakan lakukan Konfirmasi Pembayaran
+            <a href="<?= BASE_URL."index.php?page=my-profile&module=pesanan&action=konfirmasi_pembayaran&pesanan_id=$pesanan_id" ?>">Disini</a>
+        </p>
+    </div>

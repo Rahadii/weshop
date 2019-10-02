@@ -2,6 +2,13 @@
 	// absolute path
 	define('BASE_URL', 'http://localhost/weshop/');
 
+	// membuat sebuah array untuk status bukti pembayaran
+	$arrayStatusPesanan[0] = "Menunggu Pembayaran";
+	$arrayStatusPesanan[1] = "Pembayaran sedang divalidasi"; 
+	$arrayStatusPesanan[2] = "Lunas";
+	$arrayStatusPesanan[3] = "Pembayaran Ditolak";
+	
+
 	function rupiah($nilai = 0){
 		$string = "Rp " . number_format($nilai);
 		return $string;
