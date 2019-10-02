@@ -1,8 +1,8 @@
 <?php  
-	$dbhost 	= "localhost";
+	$dbhost = "localhost";
 	$dbuser	= "root";
 	$dbpass	= "";
-	$dbname 	= "weshop";
+	$dbname = "weshop";
 
 	$db = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 	
