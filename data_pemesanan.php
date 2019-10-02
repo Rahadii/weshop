@@ -11,7 +11,7 @@
 <div id="frame-data-pemesanan">
     <h3 class="title">Alamat Pengiriman Barang</h3>
     <div id="frame-form-pengiriman">
-        <form action="<?php echo BASE_URL."proses_pemesanan.php"; ?>" method="POST">
+        <form action="<?= BASE_URL."proses_pemesanan.php"; ?>" method="POST">
             <div class="element-form">
                 <label>Nama Penerima</label>
                 <span> <input type="text" name="nama_penerima" /> </span>

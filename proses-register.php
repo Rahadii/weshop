@@ -18,6 +18,7 @@
 
 	$query = mysqli_query($db, "SELECT * FROM user WHERE email = '$email' ");
 
+	// validation
 	
 	if (empty($nama_lengkap) || empty($email) || empty($phone) || empty($alamat) || empty($password)) {
 		header("location: ".BASE_URL."index.php?page=register&notif=require&$dataform");

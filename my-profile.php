@@ -32,7 +32,7 @@
             </li>
                 <?php } ?>
             <li>
-                <a <?php if($module == "pesanan"){ echo "class='active'";} ?> href="<?php echo BASE_URL."index.php?page=my-profile&module=pesanan&action=detail&pesanan_id=5"; ?>">Pesanan</a>
+                <a <?php if($module == "pesanan"){ echo "class='active'";} ?> href="<?php echo BASE_URL."index.php?page=my-profile&module=pesanan&action=detail"; ?>">Pesanan</a>
             </li>
         </ul>
     </div>

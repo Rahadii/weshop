@@ -49,8 +49,8 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<a href="<?php echo BASE_URL."index.php"; ?>">
-				<img src="<?php echo BASE_URL."images/logo.png"; ?>">
+			<a href="<?= BASE_URL."index.php"; ?>">
+				<img src="<?= BASE_URL."images/logo.png"; ?>">
 			</a>
 
 			<div id="menu">
@@ -68,8 +68,8 @@
 
 				</div>
 				
-				<a href="<?php echo BASE_URL."index.php?page=keranjang"; ?>" id="button-keranjang">
-					<img src="<?php echo BASE_URL."images/cart.png"; ?>">
+				<a href="<?= BASE_URL."index.php?page=keranjang"; ?>" id="button-keranjang">
+					<img src="<?= BASE_URL."images/cart.png"; ?>">
 					<?php 
 						if($totalBarang != 0){
 							echo "<span class='total-barang'>$totalBarang</span>";

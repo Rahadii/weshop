@@ -20,6 +20,7 @@
         
         $keranjang = $_SESSION['keranjang']; // mengambil keranjang dari session
 
+        // untuk mengeluarkan seluruh array
         foreach ($keranjang as $key => $value) {
             $barang_id = $key; 
             $quantity = $value['quantity'];
@@ -31,6 +32,6 @@
 
         unset($_SESSION['keranjang']); // menghapus list yang tersimpan di keranjang
 
-        header('location: '.BASE_URL.'index.php?page=my-profile&module=pesanan&action=detail&pesanan_id=$last_pesanan_id');
+        header("location: ".BASE_URL."index.php?page=my-profile&module=pesanan&action=detail&pesanan_id=$last_pesanan_id");
     }
 ?>
