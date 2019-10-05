@@ -28,7 +28,7 @@
             
             // validasi untuk super admin atau bukan
             if($level == "superadmin"){
-                $buttonUpdateStatus = "<a class='tombol-action' href='".BASE_URL."index.php?age=my-profile&module=pesanan&action=status&pesanan_id=$row[pesanan_id]'>Update Status</a>";
+                $buttonUpdateStatus = "<a class='tombol-action' href='".BASE_URL."index.php?page=my-profile&module=pesanan&action=status&pesanan_id=$row[pesanan_id]'>Update Status</a>";
             }
 
             // menampung value status
